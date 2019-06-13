@@ -8,9 +8,9 @@ A Docker image with the following installed:
 The versions of the binarys are defined by environment variables, so bumping up versions of packer/terraform or ansible is handled in one place:
 
 ```
-ENV ANSIBLE_VERSION=2.4.2.0
-ENV PACKER_VERSION=1.2.2
-ENV TERRAFORM_VERSION=0.11.7
+ENV ANSIBLE_VERSION=2.8.1
+ENV PACKER_VERSION=1.4.1
+ENV TERRAFORM_VERSION=0.12.2
 ```
 
 To run a playbook using this image, you will bind mount your directory in `/devops` 
