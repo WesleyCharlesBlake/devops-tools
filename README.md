@@ -1,5 +1,7 @@
 # Devops Docker image
 
+[![CircleCI](https://circleci.com/gh/WesleyCharlesBlake/devops-tools.svg?style=svg)](https://circleci.com/gh/WesleyCharlesBlake/devops-tools)
+
 A Docker image with the following installed: 
 - [Packer](https://www.packer.io/)
 - [Terraform](https://www.terraform.io/)
@@ -13,8 +15,10 @@ ENV PACKER_VERSION=1.4.1
 ENV TERRAFORM_VERSION=0.12.2
 ```
 
-To run a playbook using this image, you will bind mount your directory in `/devops` 
-eg
+To run a playbook using this image, you will bind mount your directory in `/devops`
+
+eg:
+
 ```bash
 # ansible example
 docker run  -v $PWD:/devops wesleycharlesblake/devops-tools ansible-playbook playbook.yml --check
@@ -22,9 +26,6 @@ docker run  -v $PWD:/devops wesleycharlesblake/devops-tools ansible-playbook pla
 # terraform example
 docker run  -v $PWD:/devops wesleycharlesblake/devops-tools terraform plan
 
-
 # packer example
 docker run  -v $PWD:/devops wesleycharlesblake/devops-tools packer validate packer.json
 ```
-
-
