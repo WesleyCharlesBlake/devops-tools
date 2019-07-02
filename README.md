@@ -11,8 +11,8 @@ The versions of the binarys are defined by environment variables, so bumping up 
 
 ```
 ENV ANSIBLE_VERSION=2.8.1
-ENV PACKER_VERSION=1.4.1
-ENV TERRAFORM_VERSION=0.12.2
+ENV PACKER_VERSION=1.4.2
+ENV TERRAFORM_VERSION=0.12.3
 ```
 
 To run a playbook using this image, you will bind mount your directory in `/devops`
