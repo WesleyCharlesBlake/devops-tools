@@ -2,7 +2,7 @@ FROM python:3.6
 
 ENV ANSIBLE_VERSION=2.8.1
 ENV PACKER_VERSION=1.4.2
-ENV TERRAFORM_VERSION=0.12.5
+ENV TERRAFORM_VERSION=0.12.9
 
 RUN apt-get update && \
     apt-get install  -y unzip python-apt
